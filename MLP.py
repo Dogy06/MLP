@@ -34,7 +34,7 @@ class MLP(object):
         print(self.weights)
 
     def train_weights(self, target, inputs):
-        for i in range(len(target) * 100000):
+        while True:
             result = self.feedforward(inputs)
             error = target - result
 
